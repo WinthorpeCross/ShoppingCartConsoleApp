@@ -18,7 +18,7 @@ namespace ShoppingCart
             }
             else
             {
-                return ($"{item}: {quantity} @ {price:C}.  The gross cost is { CheckoutHelpers.UpdateTotal(quantity, price):C}");
+                return ($"{item}: {quantity} @ {price:C}.  The gross cost is { CheckoutHelpers.UpdateTotal(quantity, price):C} (before discounts are applied)");
             }
 
         }

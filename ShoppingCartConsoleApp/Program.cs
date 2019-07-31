@@ -20,7 +20,7 @@ namespace ShoppingCart
             var totalApples = ShoppingBasketHelpers.GetItemCount(shoppingBasket, @"\b(apple)\b");
             try
             {
-                total = total + CheckoutHelpers.UpdateTotal(totalApples, applePricePerUnit);
+                total = total + CheckoutHelpers.UpdateTotal(totalApples, applePricePerUnit, Discounts.BuyOneGetOneFree);
                 Console.WriteLine(StringHelpers.GrossSummary("Apples", totalApples, applePricePerUnit));
             }
             catch
@@ -33,7 +33,7 @@ namespace ShoppingCart
             try
             {
                 Console.WriteLine(StringHelpers.GrossSummary("Oranges", totalOranges, orangePricePerUnit));
-                total = total + CheckoutHelpers.UpdateTotal(totalOranges, orangePricePerUnit);
+                total = total + CheckoutHelpers.UpdateTotal(totalOranges, orangePricePerUnit, Discounts.BuyThreeForTwo);
             }
             catch
             {
@@ -41,7 +41,8 @@ namespace ShoppingCart
                 return;
             }
 
-            Console.WriteLine(String.Format("The total net cost is {0:C}", total));
+            Console.WriteLine();
+            Console.WriteLine(String.Format("The total cost after discounts is {0:C}", total));
             Console.ReadLine();
         }
     }
