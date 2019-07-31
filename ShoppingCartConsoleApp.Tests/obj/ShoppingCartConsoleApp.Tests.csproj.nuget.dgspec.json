@@ -1,0 +1,130 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Andre\\source\\repos\\ShoppingCartConsoleApp\\ShoppingCartConsoleApp.Tests\\ShoppingCartConsoleApp.Tests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Andre\\source\\repos\\ShoppingCartConsoleApp\\ShoppingCartConsoleApp.Tests\\ShoppingCartConsoleApp.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Andre\\source\\repos\\ShoppingCartConsoleApp\\ShoppingCartConsoleApp.Tests\\ShoppingCartConsoleApp.Tests.csproj",
+        "projectName": "ShoppingCartConsoleApp.Tests",
+        "projectPath": "C:\\Users\\Andre\\source\\repos\\ShoppingCartConsoleApp\\ShoppingCartConsoleApp.Tests\\ShoppingCartConsoleApp.Tests.csproj",
+        "packagesPath": "C:\\Users\\Andre\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Andre\\source\\repos\\ShoppingCartConsoleApp\\ShoppingCartConsoleApp.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\Andre\\source\\repos\\ShoppingCartConsoleApp\\ShoppingCartConsoleApp\\ShoppingCartConsoleApp.csproj": {
+                "projectPath": "C:\\Users\\Andre\\source\\repos\\ShoppingCartConsoleApp\\ShoppingCartConsoleApp\\ShoppingCartConsoleApp.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.1, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\Andre\\source\\repos\\ShoppingCartConsoleApp\\ShoppingCartConsoleApp\\ShoppingCartConsoleApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Andre\\source\\repos\\ShoppingCartConsoleApp\\ShoppingCartConsoleApp\\ShoppingCartConsoleApp.csproj",
+        "projectName": "ShoppingCartConsoleApp",
+        "projectPath": "C:\\Users\\Andre\\source\\repos\\ShoppingCartConsoleApp\\ShoppingCartConsoleApp\\ShoppingCartConsoleApp.csproj",
+        "packagesPath": "C:\\Users\\Andre\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Andre\\source\\repos\\ShoppingCartConsoleApp\\ShoppingCartConsoleApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

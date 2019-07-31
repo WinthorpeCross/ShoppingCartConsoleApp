@@ -1,0 +1,17 @@
+C:\Users\Andre\source\repos\ShoppingCartConsoleApp\ShoppingCartConsoleApp.Tests\bin\Debug\netcoreapp2.2\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\Andre\source\repos\ShoppingCartConsoleApp\ShoppingCartConsoleApp.Tests\bin\Debug\netcoreapp2.2\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\Andre\source\repos\ShoppingCartConsoleApp\ShoppingCartConsoleApp.Tests\bin\Debug\netcoreapp2.2\xunit.runner.utility.netcoreapp10.dll
+C:\Users\Andre\source\repos\ShoppingCartConsoleApp\ShoppingCartConsoleApp.Tests\bin\Debug\netcoreapp2.2\ShoppingCartConsoleApp.Tests.deps.json
+C:\Users\Andre\source\repos\ShoppingCartConsoleApp\ShoppingCartConsoleApp.Tests\bin\Debug\netcoreapp2.2\ShoppingCartConsoleApp.Tests.runtimeconfig.json
+C:\Users\Andre\source\repos\ShoppingCartConsoleApp\ShoppingCartConsoleApp.Tests\bin\Debug\netcoreapp2.2\ShoppingCartConsoleApp.Tests.runtimeconfig.dev.json
+C:\Users\Andre\source\repos\ShoppingCartConsoleApp\ShoppingCartConsoleApp.Tests\bin\Debug\netcoreapp2.2\ShoppingCartConsoleApp.Tests.dll
+C:\Users\Andre\source\repos\ShoppingCartConsoleApp\ShoppingCartConsoleApp.Tests\bin\Debug\netcoreapp2.2\ShoppingCartConsoleApp.Tests.pdb
+C:\Users\Andre\source\repos\ShoppingCartConsoleApp\ShoppingCartConsoleApp.Tests\bin\Debug\netcoreapp2.2\ShoppingCartConsoleApp.dll
+C:\Users\Andre\source\repos\ShoppingCartConsoleApp\ShoppingCartConsoleApp.Tests\bin\Debug\netcoreapp2.2\ShoppingCartConsoleApp.pdb
+C:\Users\Andre\source\repos\ShoppingCartConsoleApp\ShoppingCartConsoleApp.Tests\obj\Debug\netcoreapp2.2\ShoppingCartConsoleApp.Tests.csprojAssemblyReference.cache
+C:\Users\Andre\source\repos\ShoppingCartConsoleApp\ShoppingCartConsoleApp.Tests\obj\Debug\netcoreapp2.2\ShoppingCartConsoleApp.Tests.csproj.CoreCompileInputs.cache
+C:\Users\Andre\source\repos\ShoppingCartConsoleApp\ShoppingCartConsoleApp.Tests\obj\Debug\netcoreapp2.2\ShoppingCartConsoleApp.Tests.AssemblyInfoInputs.cache
+C:\Users\Andre\source\repos\ShoppingCartConsoleApp\ShoppingCartConsoleApp.Tests\obj\Debug\netcoreapp2.2\ShoppingCartConsoleApp.Tests.AssemblyInfo.cs
+C:\Users\Andre\source\repos\ShoppingCartConsoleApp\ShoppingCartConsoleApp.Tests\obj\Debug\netcoreapp2.2\ShoppingCartConsoleApp.Tests.csproj.CopyComplete
+C:\Users\Andre\source\repos\ShoppingCartConsoleApp\ShoppingCartConsoleApp.Tests\obj\Debug\netcoreapp2.2\ShoppingCartConsoleApp.Tests.dll
+C:\Users\Andre\source\repos\ShoppingCartConsoleApp\ShoppingCartConsoleApp.Tests\obj\Debug\netcoreapp2.2\ShoppingCartConsoleApp.Tests.pdb

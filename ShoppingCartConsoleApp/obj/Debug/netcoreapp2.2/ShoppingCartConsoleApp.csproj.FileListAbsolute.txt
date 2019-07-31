@@ -1,0 +1,11 @@
+C:\Users\Andre\source\repos\ShoppingCartConsoleApp\ShoppingCartConsoleApp\bin\Debug\netcoreapp2.2\ShoppingCartConsoleApp.deps.json
+C:\Users\Andre\source\repos\ShoppingCartConsoleApp\ShoppingCartConsoleApp\bin\Debug\netcoreapp2.2\ShoppingCartConsoleApp.runtimeconfig.json
+C:\Users\Andre\source\repos\ShoppingCartConsoleApp\ShoppingCartConsoleApp\bin\Debug\netcoreapp2.2\ShoppingCartConsoleApp.runtimeconfig.dev.json
+C:\Users\Andre\source\repos\ShoppingCartConsoleApp\ShoppingCartConsoleApp\bin\Debug\netcoreapp2.2\ShoppingCartConsoleApp.dll
+C:\Users\Andre\source\repos\ShoppingCartConsoleApp\ShoppingCartConsoleApp\bin\Debug\netcoreapp2.2\ShoppingCartConsoleApp.pdb
+C:\Users\Andre\source\repos\ShoppingCartConsoleApp\ShoppingCartConsoleApp\obj\Debug\netcoreapp2.2\ShoppingCartConsoleApp.csprojAssemblyReference.cache
+C:\Users\Andre\source\repos\ShoppingCartConsoleApp\ShoppingCartConsoleApp\obj\Debug\netcoreapp2.2\ShoppingCartConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\Andre\source\repos\ShoppingCartConsoleApp\ShoppingCartConsoleApp\obj\Debug\netcoreapp2.2\ShoppingCartConsoleApp.AssemblyInfoInputs.cache
+C:\Users\Andre\source\repos\ShoppingCartConsoleApp\ShoppingCartConsoleApp\obj\Debug\netcoreapp2.2\ShoppingCartConsoleApp.AssemblyInfo.cs
+C:\Users\Andre\source\repos\ShoppingCartConsoleApp\ShoppingCartConsoleApp\obj\Debug\netcoreapp2.2\ShoppingCartConsoleApp.dll
+C:\Users\Andre\source\repos\ShoppingCartConsoleApp\ShoppingCartConsoleApp\obj\Debug\netcoreapp2.2\ShoppingCartConsoleApp.pdb
