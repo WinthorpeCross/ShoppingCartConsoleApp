@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ShoppingCartConsoleApp.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
@@ -16,6 +17,23 @@ namespace ShoppingCart
         {
             var rng = new Random();
             return Enumerable.Range(1, itemsToAdd).Select(index => AvailableItems[rng.Next(AvailableItems.Length)]).ToList();
+        }
+
+        public static List<ShoppingBasketItem> GenerateRamdomShoppingBasket(ICollection<Product> availableProducts)
+        {
+            var rng = new Random();
+
+            var basket = new List<ShoppingBasketItem>();
+
+            foreach(var item in availableProducts)
+            {
+                basket.Add(new ShoppingBasketItem(item, rng.Next(1, 10)));
+            }
+
+            return basket;
+
+
+            //return Enumerable.Range(1, itemsToAdd).Select(index => AvailableItems[rng.Next(AvailableItems.Length)]).ToList();
         }
 
         public static int GetItemCount(List<string> shoppingBasket, string pattern)

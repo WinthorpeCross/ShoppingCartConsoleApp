@@ -1,5 +1,5 @@
 ﻿
-namespace ShoppingCart
+namespace ShoppingCartConsoleApp.Models
 {
     public enum Discounts
     {
