@@ -27,7 +27,7 @@ namespace ShoppingCart
                 switch (item.ProductOrdered.Discount)
                 {
                     case Discounts.None:
-                        tot = tot + item.ProductOrdered.UnitCost * item.QuantityOrdered;
+                        tot = tot + item.QuantityOrdered * item.ProductOrdered.UnitCost;
                         break;
 
                     case Discounts.BuyOneGetOneFree:
