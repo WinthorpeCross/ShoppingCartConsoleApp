@@ -7,7 +7,7 @@ namespace ShoppingCartConsoleApp.Models
 {
     public class Discount
     {
-        public Discount(string name, string discountExpression)
+        public Discount(string name, decimal discountExpression)
         {
             Id = Interlocked.Increment(ref GlobalId);
             Name = name;
@@ -17,6 +17,6 @@ namespace ShoppingCartConsoleApp.Models
         public static int GlobalId;
         public int Id { get; set; }
         public string Name { get; set; }
-        public string DiscountExpression { get; set; }
+        public decimal DiscountExpression { get; set; }
     }
 }

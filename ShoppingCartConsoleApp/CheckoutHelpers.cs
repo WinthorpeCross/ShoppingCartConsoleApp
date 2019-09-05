@@ -25,17 +25,18 @@ namespace ShoppingCart
             decimal total = 0M;
             foreach (var item in basket)
             {
-                string expression = $"{item.QuantityOrdered} {item.ProductOrdered.CurrentDiscount.DiscountExpression} {item.ProductOrdered.UnitCost}";
-                NCalc.Expression e = new NCalc.Expression(expression);
-                var orderItemTotal = (double)e.Evaluate();
-                total = total + (decimal)orderItemTotal;
+                //string expression = $"{item.QuantityOrdered} {item.ProductOrdered.CurrentDiscount.DiscountExpression} {item.ProductOrdered.UnitCost}";
+                //NCalc.Expression e = new NCalc.Expression(expression);
+                //var orderItemTotal = (double)e.Evaluate();
+                //total = total + (decimal)orderItemTotal;
             }
             return total;
         }
 
         public static decimal CalculateTotalLinq(List<ShoppingBasketItem> basket)
         {
-            return basket.Sum(x => x.QuantityOrdered * x.ProductOrdered.UnitCost);
+            ////return basket.Sum(x => x.QuantityOrdered * x.ProductOrdered.UnitCost);
+            return basket.Sum(x => Math.Ceiling(x.QuantityOrdered * x.ProductOrdered.CurrentDiscount.DiscountExpression) * x.ProductOrdered.UnitCost);
         }
 
 
