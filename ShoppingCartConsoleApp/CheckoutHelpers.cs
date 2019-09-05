@@ -12,12 +12,12 @@ namespace ShoppingCart
     {
         public static decimal CalculateTotal(List<ShoppingBasketItem> basket)
         {
-            decimal tot = 0M;
+            var total = 0M;
             foreach(var item in basket)
             {
-                tot = tot + item.ProductOrdered.UnitCost * item.QuantityOrdered;
+                total = total + item.ProductOrdered.UnitCost * item.QuantityOrdered;
             }
-            return tot;
+            return total;
         }
 
         public static decimal CalculateTotal1(List<ShoppingBasketItem> basket)
@@ -33,48 +33,52 @@ namespace ShoppingCart
             return total;
         }
 
+        /// <summary>
+        /// Too generic...
+        /// </summary>
+        /// <param name="basket"></param>
+        /// <returns></returns>
         public static decimal CalculateTotalLinq(List<ShoppingBasketItem> basket)
         {
             ////return basket.Sum(x => x.QuantityOrdered * x.ProductOrdered.UnitCost);
             return basket.Sum(x => Math.Ceiling(x.QuantityOrdered * x.ProductOrdered.CurrentDiscount.DiscountExpression) * x.ProductOrdered.UnitCost);
         }
 
+        //public static decimal UpdateTotal(int qty, decimal price)
+        //{
+        //    if (qty < 0)
+        //    {
+        //        throw new System.ArgumentOutOfRangeException("Quantity");
+        //    }
 
-        public static decimal UpdateTotal(int qty, decimal price)
-        {
-            if (qty < 0)
-            {
-                throw new System.ArgumentOutOfRangeException("Quantity");
-            }
+        //    return qty * price;
+        //}
 
-            return qty * price;
-        }
+        //public static decimal UpdateTotal(int qty, decimal price, Discounts discount)
+        //{
+        //    if (qty < 0)
+        //    {
+        //        throw new System.ArgumentOutOfRangeException("Quantity");
+        //    }
 
-        public static decimal UpdateTotal(int qty, decimal price, Discounts discount)
-        {
-            if (qty < 0)
-            {
-                throw new System.ArgumentOutOfRangeException("Quantity");
-            }
+        //    decimal subTotal = 0;
 
-            decimal subTotal = 0;
+        //    switch (discount)
+        //    {
+        //        case Discounts.None:
+        //            subTotal = qty * price;
+        //            break;
 
-            switch (discount)
-            {
-                case Discounts.None:
-                    subTotal = qty * price;
-                    break;
+        //        case Discounts.BuyOneGetOneFree:
+        //            subTotal = Math.Ceiling((decimal)qty / 1 * 0.5M) * price;
+        //            break;
 
-                case Discounts.BuyOneGetOneFree:
-                    subTotal = Math.Ceiling((decimal)qty / 1 * 0.5M) * price;
-                    break;
+        //        case Discounts.BuyThreeForTwo:
+        //            subTotal = Math.Ceiling((decimal)qty / 3 * 2) * price;
+        //            break;
+        //    }
 
-                case Discounts.BuyThreeForTwo:
-                    subTotal = Math.Ceiling((decimal)qty / 3 * 2) * price;
-                    break;
-            }
-
-            return subTotal;
-        }
+        //    return subTotal;
+        //}
     }
 }
