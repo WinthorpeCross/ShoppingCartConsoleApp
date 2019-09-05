@@ -27,7 +27,8 @@ namespace ShoppingCart
 
             foreach(var item in availableProducts)
             {
-                basket.Add(new ShoppingBasketItem(item, rng.Next(1, 10)));
+                //basket.Add(new ShoppingBasketItem(item, rng.Next(1, 10)));
+                basket.Add(new ShoppingBasketItem(item, 6));
             }
 
             return basket;

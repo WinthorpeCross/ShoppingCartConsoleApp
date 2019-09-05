@@ -7,16 +7,16 @@ namespace ShoppingCartConsoleApp.Models
 {
     public class Discount
     {
-        public Discount(Product productOrdered, int quantityOrdered)
+        public Discount(string name, string discountExpression)
         {
             Id = Interlocked.Increment(ref GlobalId);
-            //ProductOrdered = productOrdered;
-            //QuantityOrdered = quantityOrdered;
+            Name = name;
+            DiscountExpression = discountExpression;
         }
 
         public static int GlobalId;
         public int Id { get; set; }
         public string Name { get; set; }
-        public decimal DiscountMultiplier { get; set; }
+        public string DiscountExpression { get; set; }
     }
 }

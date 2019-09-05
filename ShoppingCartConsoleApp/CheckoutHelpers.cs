@@ -1,13 +1,15 @@
 ﻿using ShoppingCartConsoleApp.Models;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
+using System.Linq.Expressions;
+using NCalc;
 
 namespace ShoppingCart
 {
     public static class CheckoutHelpers
     {
-
         public static decimal CalculateTotal(List<ShoppingBasketItem> basket)
         {
             decimal tot = 0M;
@@ -20,31 +22,20 @@ namespace ShoppingCart
 
         public static decimal CalculateTotal1(List<ShoppingBasketItem> basket)
         {
-            decimal tot = 0M;
+            decimal total = 0M;
             foreach (var item in basket)
             {
-                
-                switch (item.ProductOrdered.Discount)
-                {
-                    case Discounts.None:
-                        tot = tot + item.QuantityOrdered * item.ProductOrdered.UnitCost;
-                        break;
-
-                    case Discounts.BuyOneGetOneFree:
-                        tot = tot + Math.Ceiling((decimal)item.QuantityOrdered / 1 * 0.5M) * item.ProductOrdered.UnitCost;
-                        break;
-
-                    case Discounts.BuyThreeForTwo:
-                        tot = tot + Math.Ceiling((decimal)item.QuantityOrdered / 3 * 2) * item.ProductOrdered.UnitCost;
-                        break;
-                }
+                string expression = $"{item.QuantityOrdered} {item.ProductOrdered.CurrentDiscount.DiscountExpression} {item.ProductOrdered.UnitCost}";
+                NCalc.Expression e = new NCalc.Expression(expression);
+                var orderItemTotal = (double)e.Evaluate();
+                total = total + (decimal)orderItemTotal;
             }
-            return tot;
+            return total;
         }
 
         public static decimal CalculateTotalLinq(List<ShoppingBasketItem> basket)
         {
-            return basket.Sum(x => x.ProductOrdered.UnitCost * x.QuantityOrdered);
+            return basket.Sum(x => x.QuantityOrdered * x.ProductOrdered.UnitCost);
         }
 
 

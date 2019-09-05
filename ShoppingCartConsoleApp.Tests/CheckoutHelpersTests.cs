@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ShoppingCartConsoleApp.Models;
+using System;
 using Xunit;
 
 namespace ShoppingCart.UnitTests
