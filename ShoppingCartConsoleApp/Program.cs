@@ -14,13 +14,14 @@ namespace ShoppingCart
         static void Main()
         {
             var discounts = new List<Discount>();
-            discounts.Add(new Discount("None", 1M));
+            //discounts.Add(new Discount("None", 1M));
             discounts.Add(new Discount("BuyOneGetOneFree", 0.5M));
             discounts.Add(new Discount("BuyThreeForTwo", 0.66M));
 
             var availableProducts = new List<Product>();
             availableProducts.Add(new Product(1, "Apple", 0.60M, discounts.FirstOrDefault(x => x.Name == "None")));
             availableProducts.Add(new Product(2, "Orange", 0.25M, discounts.FirstOrDefault(x => x.Name == "None")));
+            availableProducts.Add(new Product(3, "Banana", 1.0M, null));
 
             var shoppingBasket = ShoppingBasketHelpers.GenerateRamdomShoppingBasket(availableProducts);
 

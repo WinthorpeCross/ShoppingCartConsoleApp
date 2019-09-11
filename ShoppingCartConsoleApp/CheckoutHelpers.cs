@@ -23,8 +23,19 @@ namespace ShoppingCart
         public static decimal CalculateTotal1(List<ShoppingBasketItem> basket)
         {
             decimal total = 0M;
+
             foreach (var item in basket)
             {
+                if(item.ProductOrdered.CurrentDiscount == null)
+                {
+                    // no discount
+                    total = total + item.QuantityOrdered * item.ProductOrdered.UnitCost;
+                }
+                else
+                {
+                    // apply discount by adjusting quantity ordered
+                    total = total + Math.Ceiling(item.QuantityOrdered * item.ProductOrdered.CurrentDiscount.DiscountExpression) * item.ProductOrdered.UnitCost;
+                }
                 //string expression = $"{item.QuantityOrdered} {item.ProductOrdered.CurrentDiscount.DiscountExpression} {item.ProductOrdered.UnitCost}";
                 //NCalc.Expression e = new NCalc.Expression(expression);
                 //var orderItemTotal = (double)e.Evaluate();
@@ -41,7 +52,7 @@ namespace ShoppingCart
         public static decimal CalculateTotalLinq(List<ShoppingBasketItem> basket)
         {
             ////return basket.Sum(x => x.QuantityOrdered * x.ProductOrdered.UnitCost);
-            return basket.Sum(x => Math.Ceiling(x.QuantityOrdered * x.ProductOrdered.CurrentDiscount.DiscountExpression) * x.ProductOrdered.UnitCost);
+            return basket.Sum(x => x.ProductOrdered.CurrentDiscount != null ? Math.Ceiling(x.QuantityOrdered * x.ProductOrdered.CurrentDiscount.DiscountExpression) * x.ProductOrdered.UnitCost : x.QuantityOrdered * x.ProductOrdered.UnitCost);
         }
 
         //public static decimal UpdateTotal(int qty, decimal price)
