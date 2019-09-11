@@ -10,17 +10,12 @@ namespace ShoppingCart
 {
     public static class CheckoutHelpers
     {
-        public static decimal CalculateTotal(List<ShoppingBasketItem> basket)
+        public static decimal CalculateGrossTotal(ShoppingBasketItem item)
         {
-            var total = 0M;
-            foreach(var item in basket)
-            {
-                total = total + item.ProductOrdered.UnitCost * item.QuantityOrdered;
-            }
-            return total;
+            return item.ProductOrdered.UnitCost * item.QuantityOrdered;
         }
 
-        public static decimal CalculateTotal1(List<ShoppingBasketItem> basket)
+        public static decimal CalculateTotalLoop(List<ShoppingBasketItem> basket)
         {
             decimal total = 0M;
 

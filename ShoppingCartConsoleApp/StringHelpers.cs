@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ShoppingCartConsoleApp.Models;
+using System;
 using System.Collections.Generic;
 
 namespace ShoppingCart
@@ -9,6 +10,16 @@ namespace ShoppingCart
         {
             return String.Format("Your shopping basket contains the following items: {0}", String.Join(", ", shoppingBasket));
         }
+
+        public static string BasketSummary2(List<ShoppingBasketItem> shoppingBasket)
+        {
+            foreach(var item in shoppingBasket)
+            {
+                Console.WriteLine($"{item.ProductOrdered.Name}: {item.QuantityOrdered} @ {item.ProductOrdered.UnitCost:C}.  The gross cost is { CheckoutHelpers.CalculateGrossTotal(item):C} (before discounts are applied)");
+            }
+            return String.Format("Your shopping basket contains the following items: {0}", String.Join(", ", shoppingBasket));
+        }
+
 
         //public static string GrossSummary(string item, int quantity, decimal price)
         //{

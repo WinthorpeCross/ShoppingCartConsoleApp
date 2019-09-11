@@ -25,9 +25,16 @@ namespace ShoppingCart
 
             var shoppingBasket = ShoppingBasketHelpers.GenerateRamdomShoppingBasket(availableProducts);
 
+            StringHelpers.BasketSummary2(shoppingBasket);
+
             decimal total = 0M;
 
             total = CheckoutHelpers.CalculateTotalLinq(shoppingBasket);
+            Console.WriteLine();
+            Console.WriteLine($"The total cost after discounts is {total:C}");
+
+            total = 0M;
+            total = CheckoutHelpers.CalculateTotalLoop(shoppingBasket);
             Console.WriteLine();
             Console.WriteLine($"The total cost after discounts is {total:C}");
 
