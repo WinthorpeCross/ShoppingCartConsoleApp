@@ -11,7 +11,7 @@ namespace ShoppingCart
             return String.Format("Your shopping basket contains the following items: {0}", String.Join(", ", shoppingBasket));
         }
 
-        public static string BasketSummary2(List<ShoppingBasketItem> shoppingBasket)
+        public static string PrintBasketSummary(List<ShoppingBasketItem> shoppingBasket)
         {
             foreach(var item in shoppingBasket)
             {
